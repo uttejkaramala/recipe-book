@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+
+:root {
+  --primary-color: #ff9500;
+  --secondary-color: #e68500;
+  --background-light: #fdf5e6;
+  --text-dark: #333;
+  --text-medium: #555;
+  --text-light: #666;
+  --border-color: #ddd;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+.recipe-sheet {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 2.5rem;
+  background: #fcf8f3;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.recipe-sheet h2.category {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.recipe-sheet h3.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.recipe-meta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.875rem;
+  color: var(--text-medium);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.recipe-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .recipe-content {
+    flex-direction: row;
+  }
+}
+
+.recipe-content > div {
+  flex: 1;
+}
+
+.recipe-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ingredients-box {
+  background-color: var(--background-light);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.ingredients-box h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+}
+
+.ingredients-list {
+  list-style: none;
+  padding: 0;
+}
+
+.ingredient-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.ingredient-item input[type="checkbox"] {
+  accent-color: var(--primary-color);
+}
+
+.ingredient-item label {
+  font-size: 1rem;
+  color: var(--text-medium);
+}
+
+.directions-section h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+}
+
+.directions-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.directions-list-item {
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-left: 1.5rem; /* Adjusted padding */
+  font-size: 1rem;
+  color: var(--text-medium);
+}
+
+.directions-list-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5rem; /* Adjusted position */
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+}
+
+#back-to-home-btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#back-to-home-btn:hover {
+  background-color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  .recipe-sheet {
+    padding: 1.5rem;
+    margin: 20px auto;
+  }
+
+  .recipe-sheet h3.title {
+    font-size: 2rem;
+  }
+
+  .recipe-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=skillet_cooktop"
+    />
+    <script
+      src="https://kit.fontawesome.com/3513e320a7.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Cook Book</title>
+    <link rel="stylesheet" href="recipe_style.css" />
+    <link rel="stylesheet" href="recipe_details_style.css" />
+    <link rel="icon" type="image/png" href="./images/main-logo-white.png" />
+  </head>
+  <body>
+    <header class="heading">
+      <div class="logo">
+        <span class="material-symbols-outlined"> skillet_cooktop </span>The
+        recipe Book
+      </div>
+      <nav class="navbar">
+        <a href="#" class="active">Home</a>
+        <a href="About.html">About</a>
+        <a href="#contact" class="contact_us">Contact</a>
+      </nav>
+    </header>
+    <div id="homepage-content">
+      <section class="container">
+        <div class="top">
+          <p id="top_first">Cook like a pro with our EASY and TASTY recipes</p>
+          <p></p>
+          <p>
+            From quick and easy meals to gourment delights, We have something
+            for every taste and occasion.
+          </p>
+          <button><a href="javascript:void(0);">Explore all recipes</a></button>
+        </div>
+        <img
+          src="images/chef.webp"
+          alt="image of chef"
+          width="250"
+          height="250"
+        />
+      </section>
+      <section class="popular-recipes">
+        <h2>Popular Recipes You Can't Miss</h2>
+        <p>
+          From comfort food classics to exotic flavors, our featured recipes are
+          sure to impress.
+        </p>
+        <div class="recipes-container">
+          <!-- Recipe Card 1 -->
+          <div class="recipe-card">
+            <img
+              src="./images/tomato-soup.jpeg"
+              alt="Creamy Tomato Basil Soup"
+            />
+            <h3>Creamy Tomato Basil Soup</h3>
+            <p>
+              This comforting recipe is made with fresh tomatoes, basil, and a
+              touch of cream.
+            </p>
+            <button class="details-btn" data-slug="creamy-tomato-basil-soup">
+              See Full Details
+            </button>
+          </div>
+          <!-- Recipe Card 2 -->
+          <div class="recipe-card">
+            <img src="./images/shrimp-tacos.jpeg" alt="Spicy Shrimp Tacos" />
+            <h3>Spicy Shrimp Tacos</h3>
+            <p>
+              These tacos are loaded with juicy shrimp that have been marinated
+              in a spicy mix of flavors.
+            </p>
+            <button class="details-btn" data-slug="spicy-shrimp-tacos">
+              See Full Details
+            </button>
+          </div>
+          <!-- Recipe Card 3 -->
+          <div class="recipe-card">
+            <img src="./images/chicken-parmesan.jpeg" alt="Chicken Parmesan" />
+            <h3>Chicken Parmesan</h3>
+            <p>
+              This classic Italian dish features breaded chicken breasts cooked
+              to crispy perfection.
+            </p>
+            <button class="details-btn" data-slug="chicken-parmesan">
+              See Full Details
+            </button>
+          </div>
+          <!-- Recipe Card 4 -->
+          <div class="recipe-card">
+            <img
+              src="./images/chocolate-chip-cookies.jpg"
+              alt="Chocolate Chip Cookies"
+            />
+            <h3>Chocolate Chip Cookies</h3>
+            <p>
+              These cookies are the perfect blend of chewy and crispy, with
+              gooey melted chocolate.
+            </p>
+            <button class="details-btn" data-slug="chocolate-chip-cookies">
+              See Full Details
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="south-container">
+        <h1>Popular South Indian Recipes</h1>
+        <p>These are south indians best recipes</p>
+        <div class="south-recipe-grid">
+          <!-- Recipe 1 -->
+          <div class="recipe-card">
+            <img src="./images/masala-dosa.jpeg" alt="Crispy Masala Dosa" />
+            <h2>Crispy Masala Dosa</h2>
+            <p>
+              A classic South Indian crepe stuffed with spiced potato filling.
+            </p>
+            <button class="details-btn" data-slug="crispy-masala-dosa">
+              See Full Details
+            </button>
+          </div>
+
+          <!-- Recipe 2 -->
+          <div class="recipe-card">
+            <img src="./images/idli.jpg" alt="Soft Idli" />
+            <h2>Soft Idli</h2>
+            <p>Steamed rice cakes served with chutney and sambar.</p>
+            <button class="details-btn" data-slug="soft-idli">
+              See Full Details
+            </button>
+          </div>
+
+          <!-- Recipe 3 -->
+          <div class="recipe-card">
+            <img src="./images/vada.jpeg" alt="Medu Vada" />
+            <h2>Medu Vada</h2>
+            <p>Crispy lentil fritters, perfect with coconut chutney.</p>
+            <button class="details-btn" data-slug="medu-vada">
+              See Full Details
+            </button>
+          </div>
+
+          <!-- Recipe 4 -->
+          <div class="recipe-card">
+            <img src="./images/sambar.jpeg" alt="Vegetable Sambar" />
+            <h2>Vegetable Sambar</h2>
+            <p>A flavorful lentil stew with vegetables and spices.</p>
+            <button class="details-btn" data-slug="vegetable-sambar">
+              See Full Details
+            </button>
+          </div>
+
+          <!-- Recipe 5 -->
+          <div class="recipe-card">
+            <img src="./images/chana_masala.jpg" alt="Chana Masala" />
+            <h2>Chana Masala</h2>
+            <p>A spiced chickpea curry that's hearty and delicious.</p>
+            <button class="details-btn" data-slug="chana-masala">
+              See Full Details
+            </button>
+          </div>
+
+          <!-- Recipe 6 -->
+          <div class="recipe-card">
+            <img src="./images/egg_bhurji.jpg" alt="Egg Bhurji" />
+            <h2>Egg Bhurji</h2>
+            <p>A flavorful scrambled egg dish with Indian spices.</p>
+            <button class="details-btn" data-slug="egg-bhurji">
+              See Full Details
+            </button>
+          </div>
+
+          <!-- Recipe 7 -->
+          <div class="recipe-card">
+            <img src="./images/coconut.jpg" alt="Coconut Chutney" />
+            <h2>Coconut Chutney</h2>
+            <p>A creamy chutney made with fresh coconut and spices.</p>
+            <button class="details-btn" data-slug="coconut-chutney">
+              See Full Details
+            </button>
+          </div>
+
+          <!-- Recipe 8 -->
+          <div class="recipe-card">
+            <img src="./images/tomato_chutney.jpg" alt="Tomato Chutney" />
+            <h2>Tomato Chutney</h2>
+            <p>A tangy and spicy chutney made with ripe tomatoes.</p>
+            <button class="details-btn" data-slug="tomato-chutney">
+              See Full Details
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- container for recipe sheet -->
+    <div id="recipe-sheet-container"></div>
+
+    <footer id="contact">
+      <p>
+        If you have any queries,
+        <a href="mailto:contact@southindianrecipes.com">contact us</a>.
+      </p>
+      <i class="fa-brands fa-instagram fa-2xl"></i>
+      <i class="fa-brands fa-whatsapp fa-2xl"></i>
+    </footer>
+
+    <!-- Link to your separate JavaScript files -->
+    <script src="recipes.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
+<div></div>

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    border: 0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+    background-color:whitesmoke;
+    font-family: "Quicksand";
+}
+.container{
+    width: 60%;
+    background-color: #f1a34312;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+ }
+.image img{
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+}
+.recipe_name{
+    margin-top: 1em;
+    color: black;
+}
+.recipe_name h1{
+    margin: 0;
+    font-size: 3em;
+    font-weight: 300;
+}
+.recipe_name h4{
+    margin: 0;
+    font-size: 1.3em;
+    font-weight: 300;
+}
+.recipe_name i{
+    margin-top:5%;
+    margin-left: 5%;
+}
+.recipe_name i #text1, #text2{
+    font-family: "Quicksand";
+    font-weight: 100;
+}
+.recipe_name #clock{
+    margin-left: 50%;
+}
+.parent_container {
+    display: flex; /* Create a flex container for children */
+    gap: 20px; /* Add space between child divs */
+    align-items: flex-start; /* Align items at the top (optional) */
+}
+.ingredients{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+       
+}
+.ingredients h1{
+    padding: 0 5%;
+   font-weight: 500;
+}
+.ingredients .list_of_items{
+    margin: 0;
+    padding: 0 7%;
+    list-style: none;
+    font-size: 1.2em;
+    font-weight: dark;
+}
+.Nutrition{
+    margin-top: 20px; 
+    padding: 10px;
+}
+.Nutrition h3{ 
+    font-weight: 600;
+}
+.Nutrition li{
+    list-style: none;
+    padding: 0 10%;
+}
+.instructions{
+    flex:1;
+}
+.instructions h1{
+    padding: 0 5%;
+    font-weight: 500;
+}
+.instructions li{
+    font-size: 1.3em;
+}
